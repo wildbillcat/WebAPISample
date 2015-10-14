@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+@{
+    List<string> Collection = new List<string>();
+    Collection.Add("");
+    Collection.Add("test");
+    Collection.Add("test2");
+}
+
+Collections: @Html.DropDownList("Collections", new SelectList(Collection))
+
+Projects: @Html.DropDownList("ColProjectslections")
+
+Builds: @Html.DropDownList("Builds")
